@@ -46,14 +46,15 @@ permissions:
   contents: read
   id-token: write
   packages: write
-  
-jobs:
-    name: deploy to ECS
-    runs-on: ubuntu-latest
-    environment: production
-    permissions:
-      contents: read
-      packages: write
+
+  jobs:
+      deploy:
+        name: deploy to ECS
+        runs-on: ubuntu-latest
+        environment: production
+        permissions:
+          contents: read
+          packages: write
 
     steps:
     - name: Checkout
