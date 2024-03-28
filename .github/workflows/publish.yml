@@ -1,4 +1,4 @@
-#name: Deploy Images to GHCR
+#name: Publish Images to GHCR
 
 on:
   push:
