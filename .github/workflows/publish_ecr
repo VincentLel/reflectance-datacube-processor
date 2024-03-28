@@ -22,7 +22,6 @@
 #    Replace the value of the `CONTAINER_NAME` environment variable in the workflow below with the name of the container
 #    in the `containerDefinitions` section of the task definition.
 
-
 name: Deploy to Amazon ECS
 
 # Controls when the action will run. Invokes the workflow on push events but only for the main branch
@@ -41,7 +40,6 @@ env:
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: FastAPI           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
-
 permissions:
   contents: read
   id-token: write   # This is required for requesting the JWT
