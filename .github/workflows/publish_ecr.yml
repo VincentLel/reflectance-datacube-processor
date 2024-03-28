@@ -39,7 +39,7 @@ env:
   ECS_SERVICE: Processor_cluster_service
   ECS_CLUSTER: Processor_cluster
   ECS_TASK_DEFINITION: Processor_task_definition-revision7.json                                   
-  CONTAINER_NAME: reflectance
+  CONTAINER_NAME: reflectance_DC
 
   jobs:
       deploy:
