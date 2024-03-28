@@ -2,13 +2,13 @@
 click
 Sphinx
 coverage
-awscli>=1.27.130
+awscli>=1.29.35
 python-dotenv>=0.5.1
+python-multipart
 flake8
 requests
 requests-mock
 scipy
-geosyspy
 pandas
 shapely
 rasterio
@@ -28,9 +28,9 @@ netcdf4
 pystac
 stackstac
 odc-stac
-earthdaily==0.0.1rc4
+earthdaily==0.0.6
 # aws
 boto3
-
 # azure
 azure-storage-blob
+byoa==0.1.0a2
