@@ -46,8 +46,9 @@ permissions:
   contents: read
   id-token: write
   packages: write
-
+  
 jobs:
+  build-and-push-image-to-ECR:
     runs-on: ubuntu-latest
     environment: production
     permissions:
