@@ -34,18 +34,18 @@ on:
     - main
 
 env:
-  # set this to your preferred AWS region, e.g. us-west-1
+# set this to your preferred AWS region, e.g. us-west-1
   AWS_REGION: us-east-1
-  # set this to your Amazon ECR repository name
+# set this to your Amazon ECR repository name
   ECR_REPOSITORY: processordemo     
-  # set this to your Amazon ECS service name
+# set this to your Amazon ECS service name
   ECS_SERVICE: Processor_cluster_service
-  # set this to your Amazon ECS cluster name
+# set this to your Amazon ECS cluster name
   ECS_CLUSTER: Processor_cluster
-  # set this to the path to your Amazon ECS task definition
-  # file, e.g. .aws/task-definition.json
+# set this to the path to your Amazon ECS task definition
+# file, e.g. .aws/task-definition.json
   ECS_TASK_DEFINITION: Processor_task_definition-revision7.json  
-  # set this to the name of the container in the containerDefinitions section of your task definition                                             
+# set this to the name of the container in the containerDefinitions section of your task definition                                             
   CONTAINER_NAME: FastAPI
 
   jobs:
