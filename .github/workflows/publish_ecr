@@ -59,6 +59,7 @@ jobs:
     with:
         role-to-assume: arn:aws:iam::489065051964:role/Gitaction_devOps #change to reflect your IAM role’s ARN
         role-session-name: GitHub_to_AWS_via_gitaction_devOps
+        aws-region: ${{ env.AWS_REGION }}
 
     - name: Login to Amazon ECR
       id: login-ecr
