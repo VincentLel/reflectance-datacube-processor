@@ -1,8 +1,8 @@
-#name: Publish Images to GHCR
+name: Publish Images to GHCR
 
 on:
   push:
-    branches: ['']
+    branches: ['main']
 
 env:
   REGISTRY: ghcr.io
