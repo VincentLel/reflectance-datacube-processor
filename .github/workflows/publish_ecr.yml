@@ -48,10 +48,12 @@ permissions:
   contents: read    # This is required for actions/checkout
 
 jobs:
-  deploy:
-    name: Deploy
+  build-and-push-image:
     runs-on: ubuntu-latest
     environment: production
+    permissions:
+      contents: read
+      packages: write
 
     steps:
     - name: Checkout
