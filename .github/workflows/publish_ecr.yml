@@ -49,6 +49,7 @@ permissions:
   
 jobs:
   build-and-push-image-to-ECR:
+    name: deploy to ECS
     runs-on: ubuntu-latest
     environment: production
     permissions:
